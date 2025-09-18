@@ -3,7 +3,6 @@ nav {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: var(--white);
     padding: 1rem 2rem;
-    box-shadow: 0 2px 8px var(--shadow);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -128,7 +127,6 @@ ul {
     background-color: var(--accent);
     color: var(--white);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(90, 103, 216, 0.3);
 }
 
 .link.active {

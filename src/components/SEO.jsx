@@ -20,7 +20,7 @@ const SEO = ({
       <meta name="author" content="Bitnova - Soluciones Digitales" />
       <meta name="robots" content="index, follow" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="theme-color" content="#5A67D8" />
+      <meta name="theme-color" content="#2C5530" />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={type} />

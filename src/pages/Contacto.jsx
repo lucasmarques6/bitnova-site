@@ -110,15 +110,23 @@ function Contacto() {
               display: 'block',
               width: '100%',
               padding: '15px',
-              backgroundColor: '#5A67D8',
+              backgroundColor: '#2D5530',
               color: '#FFFFFF',
-              border: '2px solid #5A67D8',
+              border: '2px solid #2D5530',
               borderRadius: '8px',
               fontSize: '16px',
               fontFamily: 'inherit',
               cursor: 'pointer',
               boxSizing: 'border-box',
               transition: 'all 0.3s ease'
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.backgroundColor = '#1A3A1D';
+              e.target.style.borderColor = '#1A3A1D';
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.backgroundColor = '#2D5530';
+              e.target.style.borderColor = '#2D5530';
             }}
           >
             Enviar mensaje

@@ -27,7 +27,7 @@ export default function Footer() {
           marginTop: "1rem"
         }}>
           <a
-            href="https://www.instagram.com/bitnova"
+            href="https://www.instagram.com/soybitnova/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "#4b5563" }}

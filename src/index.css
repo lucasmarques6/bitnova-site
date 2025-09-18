@@ -1,19 +1,19 @@
 
 :root {
-  /* Paleta Azul/Gris Elegante */
-  --primary: #2D3748;      /* Azul gris oscuro principal */
-  --secondary: #4A5568;    /* Azul gris medio */
-  --accent: #5A67D8;       /* Azul vibrante (accent principal) */
-  --accent-dark: #4C51BF;  /* Azul oscuro para hover */
-  --warning: #7C3AED;      /* Púrpura para CTAs */
-  --danger: #E53E3E;       /* Rojo para alertas */
-  --dark: #1A202C;         /* Azul muy oscuro */
-  --gray: #718096;         /* Gris azulado para texto secundario */
-  --gray-light: #A0AEC0;   /* Gris azul suave */
-  --light: #F7FAFC;        /* Blanco con tinte azul */
+  /* Paleta Trading/Fintech - Clara con acentos verdes */
+  --primary: #0F2027;      /* Azul muy oscuro para texto */
+  --secondary: #203A43;    /* Azul gris medio */
+  --accent: #2C5530;       /* Verde azulado principal */
+  --accent-dark: #1B3B1E;  /* Verde más oscuro para hover */
+  --warning: #4ECDC4;      /* Turquesa claro para CTAs */
+  --danger: #FF6B6B;       /* Rojo coral para alertas */
+  --dark: #0A1A1F;         /* Negro azulado */
+  --gray: #2F4F4F;         /* Gris verde para texto secundario */
+  --gray-light: #4ECDC4;   /* Turquesa para elementos destacados */
+  --light: #F0FDFA;        /* Blanco con tinte verde */
   --white: #FFFFFF;        /* Blanco puro */
-  --border: #CBD5E0;       /* Bordes gris azul suaves */
-  --shadow: rgba(45, 55, 72, 0.1); /* Sombras azul gris suaves */
+  --border: #B8E6E5;       /* Bordes verde agua suaves */
+  --shadow: rgba(44, 85, 48, 0.1); /* Sombras verdes suaves */
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,11 +22,11 @@
   color-scheme: light;
   color: var(--primary);
   background: linear-gradient(135deg, 
-    #F7FAFC 0%, 
-    #EDF2F7 25%, 
-    #E2E8F0 50%, 
-    #CBD5E0 75%, 
-    #A0AEC0 100%
+    #FAFCFC 0%, 
+    #F0F4F4 25%, 
+    #E2EAEA 50%, 
+    #D4DFDF 75%, 
+    #C0D3D3 100%
   );
   background-attachment: fixed;
   min-height: 100vh;
@@ -73,7 +73,6 @@ button:hover {
   background-color: var(--accent-dark);
   border-color: var(--accent-dark);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(90, 103, 216, 0.3);
 }
 button:focus,
 button:focus-visible {
