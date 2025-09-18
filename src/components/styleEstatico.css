@@ -1,0 +1,208 @@
+/* Navegación principal - Estilo DBeaver */
+nav {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid var(--accent);
+}
+
+/* Contenedor de navegación con logo */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos del logo tipográfico */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo-text-main {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.5px;
+    transition: all 0.3s ease;
+}
+
+.logo-text-accent {
+    font-size: 1.8rem;
+    font-weight: 300;
+    background: linear-gradient(45deg, var(--accent), var(--gray-light));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+    transition: all 0.3s ease;
+}
+
+.logo-elements {
+    display: flex;
+    margin-left: 8px;
+    gap: 3px;
+    align-items: center;
+}
+
+.logo-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: logoPulse 2s ease-in-out infinite;
+}
+
+.logo-dot:nth-child(2) {
+    animation-delay: 0.3s;
+    background: var(--gray-light);
+}
+
+.logo-dot:nth-child(3) {
+    animation-delay: 0.6s;
+    background: var(--white);
+}
+
+/* Animaciones */
+@keyframes logoPulse {
+    0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+}
+
+.logo-link:hover .logo-text-main {
+    color: var(--accent);
+}
+
+.logo-link:hover .logo-text-accent {
+    background: linear-gradient(45deg, var(--white), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    gap: 1rem;
+}
+
+.link {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    position: relative;
+}
+
+.link:hover {
+    background-color: var(--accent);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(90, 103, 216, 0.3);
+}
+
+.link.active {
+    background-color: var(--accent);
+    color: var(--white);
+}
+
+/* Footer elegante - Estilo DBeaver */
+footer {
+    background: linear-gradient(135deg, var(--dark), var(--primary));
+    color: var(--white);
+    padding: 3rem 2rem 2rem;
+    text-align: center;
+    margin-top: 4rem;
+    border-top: 4px solid var(--accent);
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+}
+
+footer p {
+    margin: 0;
+    color: var(--gray-light);
+}
+
+footer .footer-brand {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Logo con estilo DBeaver */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: var(--accent);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-logo {
+        height: 22px;
+    }
+    
+    .logo-text {
+        font-size: 1.3rem;
+    }
+    
+    ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .link {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+

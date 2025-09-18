@@ -1,0 +1,21 @@
+{
+  "name": "Bitnova - Desarrollo Web y Marketing Digital",
+  "short_name": "Bitnova",
+  "description": "Soluciones digitales innovadoras para PYMEs y sector público",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F7FAFC",
+  "theme_color": "#5A67D8",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

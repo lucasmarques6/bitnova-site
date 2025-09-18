@@ -1,11 +1,29 @@
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Nosotros from './pages/Nosotros';
+import Contacto from './pages/Contacto';
 
 function App() {
   return (
-    <div style={{ textAlign: 'center', padding: '2rem' }}>
-      <h1>Bienvenido a Bitnova</h1>
-      <p>Soluciones de software para PYMEs y sector público.</p>
-    </div>
+    <Router>
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+        <Header />
+        
+        <main style={{ flex: 1, padding: '1rem' }}>
+  
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/nosotros" element={<Nosotros />} />
+            <Route path="/contacto" element={<Contacto />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
+    </Router>
   );
 }
+
 export default App;
