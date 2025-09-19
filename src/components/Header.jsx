@@ -22,6 +22,7 @@ const Header = () => {
           <ul>
               <li><Link to='/' className='link'>Inicio</Link></li>
               <li><Link to='/nosotros' className='link'>Sobre nosotros</Link></li>
+              <li><Link to='/servicios' className='link'>Servicios</Link></li>
               <li><Link to='/contacto' className='link'>Contacto</Link></li> 
           </ul>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
@@ -13,8 +14,8 @@ function Home() {
         </h1>
         <p className="hero-subtitle">Soluciones digitales innovadoras para PYMEs y sector público</p>
         <div className="hero-buttons">
-          <button className="btn-primary">Nuestros Servicios</button>
-          <button className="btn-secondary">Contactar</button>
+          <Link to="/servicios" className="btn-primary">Nuestros Servicios</Link>
+          <Link to="/contacto" className="btn-secondary">Contactar</Link>
         </div>
       </section>
 
@@ -22,18 +23,23 @@ function Home() {
       <section className="services-section">
         <h2>Nuestros Servicios</h2>
         <div className="services-grid">
-          <div className="service-card">
+          <Link to="/servicios" className="service-card">
             <h3>Desarrollo Web</h3>
             <p>Sitios web responsivos y aplicaciones modernas</p>
-          </div>
-          <div className="service-card">
+          </Link>
+          <Link to="/servicios" className="service-card">
             <h3>Marketing Digital</h3>
             <p>Google Ads, SEO y estrategias de crecimiento</p>
-          </div>
-          <div className="service-card">
+          </Link>
+          <Link to="/servicios" className="service-card">
             <h3>Consultoría</h3>
             <p>Optimización de procesos digitales</p>
-          </div>
+          </Link>
+        </div>
+        <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+          <Link to="/servicios" className="btn-primary" style={{ fontSize: '1.1rem' }}>
+            Ver Todos los Servicios
+          </Link>
         </div>
       </section>
     </div>

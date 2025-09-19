@@ -112,3 +112,72 @@ button:focus-visible {
   background-color: var(--primary);
   color: var(--white);
 }
+
+/* Estilos para enlaces que actúan como botones */
+a.btn-primary,
+a.btn-secondary {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+}
+
+a.btn-primary {
+  background-color: var(--accent);
+  color: var(--white);
+  border: 2px solid var(--accent);
+}
+
+a.btn-primary:hover {
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
+  transform: translateY(-2px);
+}
+
+a.btn-secondary {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+a.btn-secondary:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Service Cards Interactivos */
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(44, 85, 48, 0.2);
+  border: 2px solid var(--accent);
+}
+
+.service-card h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  color: var(--primary);
+  line-height: 1.6;
+}
